@@ -27,7 +27,8 @@ on:
 env:
 #edit your values here
   ENVIRONMENT_URL: https://org41073d7e.crm.dynamics.com
-  USERNAME: <USERNAME>
+  APP_ID: fa910b3a-542c-4fce-b59c-43beb421c78c
+  TENANT_ID: 54a8e544-1927-4edb-8e84-4225ed8e739a
 
 
 jobs:
@@ -45,15 +46,17 @@ jobs:
       uses: microsoft/powerplatform-actions/who-am-i@0.4.0
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
-        user-name: ${{env.USERNAME}}
-        password-secret: ${{ secrets.password }}
+        app-id: ${{env.APP_ID}}
+        client-secret: ${{ secrets.POWERPLATFORMAPPUSER }}
+        tenant-id: ${{env.TENANT_ID}}
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@0.4.0
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
-        user-name: ${{env.USERNAME}}
-        password-secret: ${{ secrets.password }}
+        app-id: ${{env.APP_ID}}
+        client-secret: ${{ secrets.POWERPLATFORMAPPUSER }}
+        tenant-id: ${{env.TENANT_ID}}
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
 
