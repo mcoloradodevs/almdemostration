@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{60d8f395-087b-ec11-8d21-0022480b4ea8}" name="Sales Rep SR" isinherited="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendcontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvAppendTocontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvAssigncontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvCreatecontoso_SalesOrder" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletecontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvReadcontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvSharecontoso_SalesOrder" level="Global" />
+    <RolePrivilege name="prvWritecontoso_SalesOrder" level="Basic" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

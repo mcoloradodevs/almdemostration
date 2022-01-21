@@ -79,8 +79,10 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="contoso_salesorder" behavior="0" />
+      <RootComponent type="20" id="{60d8f395-087b-ec11-8d21-0022480b4ea8}" behavior="0" />
       <RootComponent type="29" id="{d0de931b-ce7a-ec11-8d21-000d3a88feb4}" behavior="0" />
       <RootComponent type="62" schemaName="contoso_SalesOrdersAdminApp" behavior="0" />
+      <RootComponent type="80" schemaName="contoso_SalesOrdersAdminApp" behavior="0" />
       <RootComponent type="300" schemaName="contoso_salesordersrepapp_33d6c" behavior="0" />
     </RootComponents>
     <MissingDependencies>
@@ -95,6 +97,10 @@
       <MissingDependency>
         <Required type="1" schemaName="environmentvariablevalue" displayName="Environment Variable Value" solution="EnvironmentVariables (1.0.2.113)" />
         <Dependent type="300" schemaName="contoso_salesordersrepapp_33d6c" displayName="Sales Orders Rep App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="contoso_SalesOrdersAdminApp" displayName="Sales Orders Admin App" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>
